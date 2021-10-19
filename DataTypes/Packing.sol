@@ -7,8 +7,12 @@ p_2 - 103739  - 65784
 p_3 - 103523 - 65784
 p_4 - 165865 - 66040 
 p_5 - 165865 - 66040 
-p_6 - 192589 - 44267 
-p_7 - 193237 - 44273
+p_6 - 214436  - 44273  
+p_7 - 214436  - 44273
+p_8 - 214436  - 44273 
+p_9 - 214436  - 44273
+p_10 - 214436  - 44273 
+p_11 - 221354 - 44273 
 */
 
 // uint8 storage and setter
@@ -101,25 +105,25 @@ contract DataTypes_packed_5 {
 
 contract DataTypes_packed_6 {
     
-     uint8 a;
+     uint64 a;
 
      struct PackItA{
          bytes16 x;
-         uint8 i;
+         uint64 i;
      }
 
      struct PackItB{
         bytes16 x;
-        uint8 i;
+        uint64 i;
      }
 
      struct PackItC{
         bytes16 x;
-        uint8 i;
-        uint z;
+        uint64 i;
+        uint64 z;
      }
 
-     uint8 b;
+     uint64 b;
 
     function SetVals() public {
       a = 1;
@@ -143,27 +147,199 @@ contract DataTypes_packed_6 {
 
 contract DataTypes_packed_7 {
     
-     uint8 a;
+     uint64 a;
 
      struct PackItA{
          bytes16 x;
-         uint8 i;
+         uint64 i;
      }
 
-     uint8 b;
+     uint64 b;
 
      struct PackItB{
         bytes16 x;
-        uint8 i;
+        uint64 i;
      }
 
      struct PackItC{
         bytes16 x;
-        uint8 i;
-        uint8 z;
+        uint64 i;
+        uint64 z;
      }
 
    
+    function SetVals() public {
+      a = 1;
+      b = 2; 
+
+     PackItA memory pack;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItB memory pack2;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItC memory pack3;
+      pack.x  = "a";
+      pack.i =  1;
+    }
+}
+
+contract DataTypes_packed_8 {
+    
+     struct PackItA{
+         bytes16 x;
+         uint64 i;
+     }
+     
+     uint64 a;
+
+     struct PackItB{
+        bytes16 x;
+        uint64 i;
+     }
+     
+     uint64 b;
+
+     struct PackItC{
+        bytes16 x;
+        uint64 i;
+        uint64 z;
+     }
+
+   
+
+    function SetVals() public {
+      a = 1;
+      b = 2; 
+
+     PackItA memory pack;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItB memory pack2;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItC memory pack3;
+      pack.x  = "a";
+      pack.i =  1;
+    }
+}
+
+contract DataTypes_packed_9 {
+    
+    uint64 a;
+    
+     struct PackItA{
+         bytes16 x;
+         uint64 i;
+     }
+     
+     uint64 b;
+
+     struct PackItB{
+        bytes16 x;
+        uint64 i;
+     }
+     
+     struct PackItC{
+        bytes16 x;
+        uint64 i;
+        uint64 z;
+     }
+
+
+    function SetVals() public {
+      a = 1;
+      b = 2; 
+
+     PackItA memory pack;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItB memory pack2;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItC memory pack3;
+      pack.x  = "a";
+      pack.i =  1;
+    }
+}
+
+contract DataTypes_packed_10 {
+
+     struct PackItA{
+         bytes16 x;
+         uint64 i;
+     }
+     
+     struct PackItB{
+        bytes16 x;
+        uint64 i;
+     }
+     
+     uint64 b;
+     uint64 a;
+     
+     struct PackItC{
+        bytes16 x;
+        uint64 i;
+        uint64 z;
+     }
+
+
+    function SetVals() public {
+      a = 1;
+      b = 2; 
+
+     PackItA memory pack;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItB memory pack2;
+      pack.x  = "a";
+      pack.i =  1;
+     
+
+      PackItC memory pack3;
+      pack.x  = "a";
+      pack.i =  1;
+    }
+}
+
+contract DataTypes_packed_11 {
+
+     struct PackItA{
+         bytes16 x;
+         uint64 i;
+     }
+     
+     uint128 b;
+      
+     struct PackItB{
+        bytes16 x;
+        uint64 i;
+     }
+     
+    
+     uint128 a;
+     
+     struct PackItC{
+        bytes16 x;
+        uint64 i;
+        uint64 z;
+     }
+
 
     function SetVals() public {
       a = 1;

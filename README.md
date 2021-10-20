@@ -46,6 +46,6 @@ This is to illustrate different ways to optimise gas - what to do and what not t
 
 # Other storage concerns with Events
 
-#
+# Compiler optimisation
 
 # Function Modifiers vs. Requires

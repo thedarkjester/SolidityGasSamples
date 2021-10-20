@@ -8,7 +8,11 @@ a_3 - 67066   ( call public 25344 ) (call public)
 a_4 - 189271   
 a_5 - 117763  
 a_7 - 117763 
-a_7 - 306951  - (4 exec 28591 ) (5 exec 27479 ) ( 6 exec 27479 )
+a_7 - 347056   - (4 exec 28591 ) (5 exec 27479 ) ( 6 exec 27479 )
+a_8 - 67066  
+a_9 - 67066 
+a_10 76975 
+a_11 76975 
 */
 
 // uint8 storage and setter
@@ -78,6 +82,19 @@ contract Accessors_8 {
 //only this contract can call me
 contract Accessors_9 {
     function func() private {
+
+    }
+}
+
+contract Accessors_10 {
+    function func() public view {
+
+    }
+}
+
+
+contract Accessors_11 {
+    function func() public pure {
 
     }
 }

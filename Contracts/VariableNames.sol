@@ -14,19 +14,19 @@ v_6 - 114517
 contract VariableNames_1 {
      uint256 someMassivVariableName;
 
-     function f_1 () public {
+     function v_1 () public {
     
      }
 }
 
-contract f_2 {
+contract v_2 {
      uint256 a;
      function x() public {
     
      }
 }
 
-contract f_3 {
+contract v_3 {
      uint256 a;
      
      function x(uint256 whyLookALongName) public {
@@ -34,14 +34,14 @@ contract f_3 {
      }
 }
 
-contract f_4 {
+contract v_4 {
      uint256 a;
      function x(uint256 b) public {
     
      }
 }
 
-contract f_5 {
+contract v_5 {
      uint256 a;
      
      function x(uint256 b) public returns (uint256 varReturn) {
@@ -49,7 +49,7 @@ contract f_5 {
      }
 }
 
-contract f_6 {
+contract v_6 {
      uint256 a;
      
      function x(uint256 b) public returns (uint256) {

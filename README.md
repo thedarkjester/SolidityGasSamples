@@ -42,7 +42,7 @@ This is to illustrate different ways to optimise gas - what to do and what not t
 
 # Inheritence and Overrides
 
-# Cleaning up date to save gas
+# Cleaning up data to save gas
 
 # Other storage concerns with Events
 

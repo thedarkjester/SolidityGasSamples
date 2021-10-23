@@ -49,3 +49,5 @@ This is to illustrate different ways to optimise gas - what to do and what not t
 # Compiler optimisation
 
 # Function Modifiers vs. Requires
+
+# Error strings

@@ -2,7 +2,8 @@
 pragma solidity ^0.8.0;
 
 /*
-f_1 - 103523 - 87634 
+f_1 - 76975 - 21186
+f_2 - 76975 - 21186
 */
 
 // uint8 storage and setter

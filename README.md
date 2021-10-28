@@ -29,7 +29,7 @@ The solution is comprised of multiple solidity `.sol` files. Each of these files
 
 
 
-## Contracts
+## Samples
 
 Try go in order, as some of the understanding is layered
 

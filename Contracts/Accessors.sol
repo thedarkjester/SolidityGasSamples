@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 /*
 a_1 - 76975   - 21186 
 a_2 - 76975   - 21186
-a_3 - 67066   ( call public 25344 ) (call public)
+a_3 - 195493   ( call public 25344 ) (call public)
 a_4 - 189271   
 a_5 - 117763  
 a_7 - 117763 
@@ -44,7 +44,7 @@ contract Accessors_4 {
     }
 }
 
-// this shouldn't be possible?
+// this shouldn't be possible? but remix allows it
 contract Accessors_5 {
     function func(uint256[] calldata arr) public {
       

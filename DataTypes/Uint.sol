@@ -4,13 +4,13 @@ pragma solidity ^0.8.0;
 /*
 2 types of gas costs - deploy and execute
 
-uint_1 = deploy 82781 // execute 43353 - 
-uint_2 = deploy 78679 // execute 43300 
-uint_3 = deploy 78691 // execute 43300 
-
+uint_1 = deploy 82793  // execute 43353 
+uint_2 = deploy 78691  // execute 43300 
+uint_3 = deploy 81941  // execute 87528 
+uint_4 = deploy 81941  // execute 87528
 // uint256 * 2 vs. uint128 * 2
-uint_4 = deploy 80207 // execute 65414  
-uint_5 = 101789 deploy // execute 
+uint_5 = deploy 80207  // execute 65414   
+uint_6 = deploy 101789  // execute  43670 
 */
 
 // uint8 storage and setter
@@ -18,12 +18,12 @@ contract DataTypes_uint_1 {
     
      uint8 i;
      
-     function SetInt() public {
+     function SetInt8() public {
       i = 1;   
      }
 }
 
-// uint256 explicit declare storage and setter
+// uint256 explicit declare 
 contract DataTypes_uint_2 {
     
      uint256 i;
@@ -33,18 +33,36 @@ contract DataTypes_uint_2 {
      }
 }
 
-// with having to work out the cast to uint256
 contract DataTypes_uint_3 {
     
-     uint i;
+     uint256 i;
+     uint256 y;
+     uint256 z; 
      
      function SetInt() public {
        i = 1;   
+       y = 1;
+       z = 1;
      }
 }
 
-// uint256 explicit declare 
+// uint default value
 contract DataTypes_uint_4 {
+    
+     uint i;
+     uint y;
+     uint z;
+     
+     function SetInt() public {
+       i = 1;   
+       y = 1;
+       z = 1;
+     }
+}
+
+
+// uint256 explicit declare 
+contract DataTypes_uint_5 {
     
      uint256 i;
      uint256 y;
@@ -55,8 +73,9 @@ contract DataTypes_uint_4 {
      }
 }
 
-// uint128 with 2 instances - is stacking like this perhaps cheaper? 
-contract DataTypes_uint_5 {
+
+// uint256 with 2 instances 
+contract DataTypes_uint_6 {
     
      uint128 i;
      uint128 y;

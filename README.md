@@ -24,11 +24,6 @@ The solution is comprised of multiple solidity `.sol` files. Each of these files
    4. Take note of the gas costs for the function(s)
    5. Compare the gas costs against each contract implementation to gain insight into how they differ
 
-1. Deployment costs
-2. Execution costs
-
-
-
 ## Samples
 
 Try go in order, as some of the understanding is layered

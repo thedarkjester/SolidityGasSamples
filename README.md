@@ -23,6 +23,7 @@ The solution is comprised of multiple solidity `.sol` files. Each of these files
    3. If there are some functions, execute the function(s) there
    4. Take note of the gas costs for the function(s)
    5. Compare the gas costs against each contract implementation to gain insight into how they differ
+   6. Take the difference and see the `$` value - remember to multiply the gas by the gas cost (e.g. 60 gas @ 100 gwei = 6000 gwei cost) - by inputting it at (https://www.cryps.info/en/Gwei_to_USD/)[https://www.cryps.info/en/Gwei_to_USD/] to see the
 
 ## Samples
 

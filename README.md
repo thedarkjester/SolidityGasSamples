@@ -48,6 +48,8 @@ Try go in order, as some of the understanding is layered
    1. 
 7. Storage variable packing layout
    1. 
+8. Immutable and constant keywords
+9. Loading from storage to memory
 
 
 
@@ -69,6 +71,7 @@ Try go in order, as some of the understanding is layered
 5. Deleting data
 6. Encoding data (hashing/encoding)
 7. Call vs. DelegateCall
+8. Assembly code
 
 ### Contract Design
 
@@ -79,4 +82,6 @@ Try go in order, as some of the understanding is layered
 5. Factory patterns
 6. EIP-1167 (Minimal proxy)
 
-# 
+# Resources
+(Another GitHub)[https://github.com/iskdrews/awesome-solidity-gas-optimization#medium--articles]
+

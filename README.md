@@ -76,5 +76,7 @@ Try go in order, as some of the understanding is layered
 2. Libraries
 3. Deleting 
 4. Compiler optimisation
+5. Factory patterns
+6. EIP-1167 (Minimal proxy)
 
 # 

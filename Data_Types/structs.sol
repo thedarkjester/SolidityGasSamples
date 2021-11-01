@@ -6,6 +6,8 @@ s_1 - 21238
 s_2 - 30175 
 s_3 - 30066   
 s_4 - 21428
+s_4_1 - 109925
+s_4_2 - 109775
 s_5 - 21391 
 s_6 - 21420 
 s_7 - 21435 
@@ -74,6 +76,43 @@ contract Structs_4 {
          test.b = 2;
          test.c = "a";
          test.d = "b";
+     }
+}
+
+contract Structs_4_1 {
+    
+    Test testStored;
+    
+     struct Test{
+         uint256 a;
+         uint256 b;
+         bytes32 c;
+         bytes32 d;
+     }
+     
+     function InMemoryUsage() public {
+         Test memory test;
+         test.a = 1;
+         test.b = 2;
+         test.c = "a";
+         test.d = "b";
+         
+         testStored = test;
+     }
+}
+
+contract Structs_4_2 {
+     struct Test{
+         uint256 a;
+         uint256 b;
+         bytes32 c;
+         bytes32 d;
+     }
+     
+     Test testStored;
+      
+     function InMemoryUsage() public {
+         testStored = Test(1,2, "a","b");
      }
 }
 

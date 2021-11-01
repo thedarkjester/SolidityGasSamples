@@ -76,11 +76,20 @@ Try go in order, as some of the understanding is layered
 ### Contract Design
 
 1. Inheritance and Overrides
+   1. If you are pressed to save gas, you may be able to skim some from your inherited contracts
+   2. **Note** this does make your code messier and less reusable - perhaps a library may be better suited for some functions
 2. Libraries
 3. Deleting 
+   1. Clearing up items you no longer use will return gas to you
 4. Compiler optimisation
+   1. The number of runs is to try optimise the number of times you expect the functions to be called
+   2. The smaller the number, the cheaper the deploy
+   3. The higher the number, in some cases, the cheaper the execute
 5. Factory patterns
+   1. Saves having to redeploy a new contract each time
 6. EIP-1167 (Minimal proxy)
+   1. Saves a lot of gas by cloning code 
+   2. **Note** it is restricted to delegated calls
 
 # Resources
 (Another GitHub)[https://github.com/iskdrews/awesome-solidity-gas-optimization#medium--articles]

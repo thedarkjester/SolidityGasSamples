@@ -40,23 +40,24 @@ Try go in order, as some of the understanding is layered
    2. declaring `uint256` is not cheaper than declaring as `uint` - they are the same
    3. as with point 1, it is cheaper to construct a contract with a `uint256`, but interestingly a `uint256` is a lot more expensive to set (it has to do with the variable packing going on - see packing section)
 4.  Strings vs. bytes
-   1. Fixed bytes are cheaper to deploy and use over strings ( e.g. `bytes32` vs. string ) (note: you are limited to the size you define)
+   1. Fixed `bytes` are cheaper to deploy and use over strings ( e.g. `bytes32` vs. string ) (note: you are limited to the size you define)
    2. Similar to `uint` declarations, it is cheaper to use smaller sized `bytes`, but if packed to fill a 256 bit slot it is more expensive to declare
 5. Structs
    1. If doing calculations or using a temporary struct, a tuple may be better
    2. Passing structs is cheaper than passing multiple variables
 6. Arrays and mappings
-   1. 
+   1. Try use `mapping`s for conditional checks - looping is expensive
+   2. Arrays can be used for purely listing objects/collections (also consider off chain hashed files)
 7. Storage variable packing layout
    1. Try combine variables to use 256bit storage spaces
    2. Sometimes the order 
    3. Bools can be broken down into single bits vs. char if really required
 8. Immutable and constant keywords
-   1. Const is cheapest if you don't intend it to change
-   2. Immutable is cheaper than normal if you only set it on the constructor and never again
+   1. `constant` is cheapest if you don't intend it to change
+   2. `Immutable` is cheaper than normal if you only set it on the constructor and never again
 9. Loading from storage to memory
-   1. Try use memory where possible over storage
-   2. Try use calldata if an external function over memory
+   1. Try use `memory` where possible over storage
+   2. Try use `calldata` if an `external` function over `memory`
 
 ### Function and contract execution
 

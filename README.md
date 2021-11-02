@@ -39,7 +39,7 @@ Try go in order, as some of the understanding is layered
    1. declaring as a lower uint (e.g. `uint8` costs more to deploy and execute)
    2. declaring `uint256` is not cheaper than declaring as `uint` - they are the same
    3. as with point 1, it is cheaper to construct a contract with a `uint256`, but interestingly a `uint256` is a lot more expensive to set (it has to do with the variable packing going on - see packing section)
-4.  Strings vs. bytes
+4.  Strings vs. bytes  
    1. Fixed `bytes` are cheaper to deploy and use over strings ( e.g. `bytes32` vs. string ) (note: you are limited to the size you define)
    2. Similar to `uint` declarations, it is cheaper to use smaller sized `bytes`, but if packed to fill a 256 bit slot it is more expensive to declare
 5. Structs

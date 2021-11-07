@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "eth-gas-reporter": "^0.2.22"
+  }
+}

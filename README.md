@@ -25,6 +25,8 @@ The solution is comprised of multiple solidity `.sol` files. Each of these files
    7. Take the difference and see the `$` value - by inputting it at [https://www.cryps.info/en/Gwei_to_USD](https://www.cryps.info/en/Gwei_to_USD) 
    8. Turn the optimiser on and repeat steps 2-7 to optimise deploy or execution
 
+An alternate approach is to run the tests pointing a chain instance (ganache UI etc.) and view the test outputs and the gas report and then examine what the tests are doing. Note: this is a work in progress.
+
 ## Samples
 
 Try go in order, as some of the understanding is layered

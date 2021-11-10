@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity 0.8.9;
 
 /*
 2 types of gas costs - deploy and execute
@@ -18,7 +18,7 @@ contract DataTypes_uint_1 {
     
      uint8 i;
      
-     function SetInt8() public {
+     function SetInt() public {
       i = 1;   
      }
 }

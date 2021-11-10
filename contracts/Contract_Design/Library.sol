@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity 0.8.9;
 
 /*
 f_1 - 274287 - 99825 - 48525
@@ -8,7 +8,7 @@ f_3 - 274959 - 99835 - 48535
 */
 
 // uint8 storage and setter
-contract FunctionNames_1 {
+contract Library_1 {
      
      address[] owners;
      mapping(address=>uint256) ownerBalances;
@@ -34,7 +34,7 @@ contract FunctionNames_1 {
 }
 
 
-contract FunctionNames_2 {
+contract Library_2 {
      
      address[] owners;
      mapping(address=>uint256) ownerBalances;
@@ -50,7 +50,7 @@ contract FunctionNames_2 {
 }
 
 
-contract FunctionNames_3 {
+contract Library_3 {
      
      address[] owners;
      mapping(address=>uint256) ownerBalances;

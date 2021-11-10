@@ -19,7 +19,6 @@ contract('StringsVsBytes 1 default value :', (accounts) => {
 
   it('gets the string', async () => {
    let str = await instance.GetString();
-   console.log(str);
   });
 });
 
@@ -38,7 +37,6 @@ contract('StringsVsBytes 2 default value :', (accounts) => {
 
   it('gets the string', async () => {
    let str = await instance.GetString();
-   console.log(str);
   });
 });
 

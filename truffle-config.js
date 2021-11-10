@@ -80,7 +80,7 @@ module.exports = {
     reporterOptions: {
       url: "http://127.0.0.1:7545",
       src: "contracts",
-      outputFile : "./gasCosts/gasReporterOutput.json",
+     // outputFile : "./gasCosts/gasReporterOutput.json", //uncomment if you want this in the file vs. the console
       gasPrice: 100,
       noColours: false,
       onlyCalledMethods : 

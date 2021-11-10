@@ -9,18 +9,18 @@ i_4 - 69882
 
 */
 
-contract Immutable_1 {
+contract StorageKeywords_1 {
     
      bytes32 constant str = "This is a magic string";   
 }
 
-contract Immutable_2 {
+contract StorageKeywords_2 {
     
      bytes32 immutable str = "This is a magic string";   
 }
 
 //0x63616e6469646174653100000000000000000000000000000000000000000000
-contract Immutable_3 {
+contract StorageKeywords_3 {
     
      bytes32 str;  
 
@@ -30,7 +30,7 @@ contract Immutable_3 {
 }
 
 // 0x63616e6469646174653100000000000000000000000000000000000000000000
-contract Immutable_4 {
+contract StorageKeywords_4 {
     bytes32 immutable str;  
 
      constructor(bytes32 newStr){

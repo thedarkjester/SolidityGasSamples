@@ -79,7 +79,28 @@ contract Structs_4 {
      }
 }
 
-contract Structs_4_1 {
+contract Structs_5 {
+    
+     struct Test{
+         uint256 a;
+         uint256 b;
+         bytes32 c;
+         bytes32 d;
+     }
+     
+     function InMemoryUsage() public {
+         Test memory test;
+         
+         test = Test({
+             a: 1,
+             b: 2,
+             d: "b",
+             c: "a"
+         });
+     }
+}
+
+contract Structs_6 {
     
     Test testStored;
     
@@ -101,7 +122,7 @@ contract Structs_4_1 {
      }
 }
 
-contract Structs_4_2 {
+contract Structs_7 {
      struct Test{
          uint256 a;
          uint256 b;
@@ -116,7 +137,7 @@ contract Structs_4_2 {
      }
 }
 
-contract Structs_5 {
+contract Structs_8 {
      struct Test{
          uint256 a;
          uint256 b;
@@ -125,24 +146,7 @@ contract Structs_5 {
      }
      
      function InMemoryUsage() public {
-         Test memory test = Test(1,2, "a","b");
-         test.a = 1;
-         test.b = 2;
-         test.c = "a";
-         test.d = "b";
-     }
-}
-
-contract Structs_6 {
-     struct Test{
-         uint256 a;
-         uint256 b;
-         bytes32 c;
-         bytes32 d;
-     }
-     
-     function InMemoryUsage() public {
-         Test memory test = Test(1,2, "a","b");
+         Test memory test;
          test.a = 1;
          test.b = 2;
          test.c = "a";
@@ -156,7 +160,7 @@ contract Structs_6 {
      }
 }
 
-contract Structs_7 {
+contract Structs_9 {
      struct Test{
          uint256 a;
          uint256 b;
@@ -165,7 +169,7 @@ contract Structs_7 {
      }
      
      function InMemoryUsage() public {
-         Test memory test = Test(1,2, "a","b");
+         Test memory test;
          test.a = 1;
          test.b = 2;
          test.c = "a";
@@ -179,7 +183,7 @@ contract Structs_7 {
      }
 }
 
-contract Structs_8 {
+contract Structs_10 {
      struct Test{
          uint256 a;
          uint256 b;
@@ -188,7 +192,7 @@ contract Structs_8 {
      }
      
      function InMemoryUsage() public {
-         Test memory test = Test(1,2, "a","b");
+         Test memory test;
          test.a = 1;
          test.b = 2;
          test.c = "a";

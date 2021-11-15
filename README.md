@@ -21,11 +21,11 @@ The solution is comprised of multiple solidity `.sol` files. Each of these files
    3. View the gas costs and take note of this cost (some `.sol` files will have some numbers at the top prepopulated in the format of `deploy cost - execution cost`)
    4. If there are some functions, execute the function(s) there
    5. Take note of the gas costs for the function(s)
-   6. Compare the gas costs against each contract implementation to gain insight into how they differ
+   6. Compare the gas costs against each contract implementation to gain insight into how they differ (each line reconstructs the contract, so deduct the construction cost as seen in the first test output line)
    7. Take the difference and see the `$` value - by inputting it at [https://www.cryps.info/en/Gwei_to_USD](https://www.cryps.info/en/Gwei_to_USD) 
    8. Turn the optimiser on and repeat steps 2-7 to optimise deploy or execution
 
-An alternate approach is to run the tests pointing a chain instance (ganache UI etc.) and view the test outputs and the gas report and then examine what the tests are doing. Note: this is a work in progress.
+An alternate approach is to run the tests pointing a chain instance (ganache UI etc.) and view the test outputs and the gas report and then examine what the tests are doing. Note: this is a work in progress. Additionally, each test line constructs the contract anew, so be sure to check the gas report to see actual execution costs. 
 
 ## Samples
 

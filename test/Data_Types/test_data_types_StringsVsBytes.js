@@ -42,11 +42,11 @@ contract('StringsVsBytes 2 default value :', (accounts) => {
 
 contract('StringsVsBytes 3 - 2 bytes16 values :', (accounts) => {
   beforeEach(async () => {
-   
+    instance = await StringsVsBytes_3.new();
   })
 
   it('constructs with two empty bytes16 values', async () => {
-    instance = await StringsVsBytes_3.new();
+    instanceConstruct = await StringsVsBytes_3.new();
   });
 
   it('sets the bytes16 to a value of 16 length', async () => {
@@ -60,11 +60,11 @@ contract('StringsVsBytes 3 - 2 bytes16 values :', (accounts) => {
 
 contract('StringsVsBytes 4 - 2 bytes32 values :', (accounts) => {
   beforeEach(async () => {
-   
+    instance = await StringsVsBytes_4.new();
   })
 
   it('constructs with two empty bytes32 values', async () => {
-    instance = await StringsVsBytes_4.new();
+    instanceConstruct = await StringsVsBytes_4.new();
   });
 
   it('sets the bytes32 to a value of 32 length', async () => {

@@ -6,15 +6,18 @@ i_1 - 217532 - 65564 - 25749
 i_2 - 179425 - 87820 - 23450
 */
 
-contract Arr_Map_1 {
-    
+contract Arrays_And_Mappings_1 {
      address[] owners;
  
-     function addOwner() public {
+     constructor(address[] memory addresses){
+        owners = addresses;
+     }
+
+     function AddOwner() public {
         owners.push(msg.sender);
      }
 
-     function addOwner2() isOwnerCheck public {
+     function CheckOwner() isOwnerCheck public {
 
      }
 
@@ -32,18 +35,26 @@ contract Arr_Map_1 {
      }
 }
 
-contract Arr_Map_2 {
+contract Arrays_And_Mappings_2 {
      mapping(address=>bool) isOwner;
      
      address[] owners;
- 
-     function addOwner() public {
+
+     constructor(address[] memory addresses){
+        owners = addresses;
+        
+        for(uint i;i<addresses.length;i++){
+            isOwner[addresses[i]] = true;
+        }
+     }
+
+     function AddOwner() public {
         owners.push(msg.sender);
         isOwner[msg.sender] = true;
      }
 
-     function addOwner2() isOwnerCheck public {
-
+     function CheckOwner() isOwnerCheck public {
+        // just checking the modifier cost
      }
 
      modifier isOwnerCheck(){

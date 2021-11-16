@@ -15,7 +15,6 @@ uint_6 = deploy 101789  // execute  43670
 
 // uint8 storage and setter
 contract DataTypes_uint_1 {
-    
      uint8 i;
      
      function SetInt() public {
@@ -25,7 +24,6 @@ contract DataTypes_uint_1 {
 
 // uint256 explicit declare 
 contract DataTypes_uint_2 {
-    
      uint256 i;
      
      function SetInt() public {
@@ -34,7 +32,6 @@ contract DataTypes_uint_2 {
 }
 
 contract DataTypes_uint_3 {
-    
      uint256 i;
      uint256 y;
      uint256 z; 
@@ -48,7 +45,6 @@ contract DataTypes_uint_3 {
 
 // uint default value
 contract DataTypes_uint_4 {
-    
      uint i;
      uint y;
      uint z;
@@ -63,7 +59,6 @@ contract DataTypes_uint_4 {
 
 // uint256 explicit declare 
 contract DataTypes_uint_5 {
-    
      uint256 i;
      uint256 y;
      
@@ -76,7 +71,6 @@ contract DataTypes_uint_5 {
 
 // uint256 with 2 instances 
 contract DataTypes_uint_6 {
-    
      uint128 i;
      uint128 y;
      

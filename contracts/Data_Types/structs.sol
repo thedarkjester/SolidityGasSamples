@@ -43,7 +43,6 @@ contract Structs_2 {
          test = Test(1,2, "a","b");
      }
 }
-
 contract Structs_3 {
     Test test;
     

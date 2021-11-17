@@ -52,7 +52,8 @@ Try go in order, as some of the understanding is layered
    2. Arrays can be used for purely listing objects/collections (also consider off chain hashed files)
 7. Storage variable packing layout
    1. Try combine variables to use 256bit storage spaces
-   2. Sometimes the order 
+   2. Sometimes the order makes little difference on deploy, but setting values it does.
+      1. It oddly is more expensive (a little) to have `uint256, uint128, uint128` than `uint128, uint128, uint256`, however the setting is still cheaper than (a lot) `uint128, uint256, uint128` as that uses two vs. three slots.
    3. Bools can be broken down into single bits vs. char if really required
 8. Immutable and constant keywords
    1. `constant` is cheapest if you don't intend it to change

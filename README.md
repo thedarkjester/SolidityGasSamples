@@ -7,7 +7,7 @@ This is to illustrate different ways to optimise gas - what to do and what not t
 3. Contract design
 
 ## How is it laid out
-
+ 
 The solution is comprised of multiple solidity `.sol` files. Each of these files will contain more than one contract in them with usage permutations to illustrate how much gas is used for Deployment and sometimes how much gas is used for executing a transaction. Some of the contracts pertain to storage costs.
 
 ## How to use the contracts

@@ -103,3 +103,6 @@ Try go in order, as some of the understanding is layered
 # Resources
 (Another GitHub)[https://github.com/iskdrews/awesome-solidity-gas-optimization#medium--articles]
 
+# Upcoming:
+- EVM ByteCode and Assembly optimisations
+
